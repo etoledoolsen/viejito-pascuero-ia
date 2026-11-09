@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: viejito-pascuero-familiar
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPENAI_REALTIME_MODEL
+        value: gpt-realtime-2.1
+      - key: FAMILY_PASSWORD
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

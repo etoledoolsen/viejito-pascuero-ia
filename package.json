@@ -1,0 +1,11 @@
+{
+  "name": "viejito-pascuero-ia-movil",
+  "version": "2.0.0",
+  "private": true,
+  "description": "PWA familiar de Santa con voz en tiempo real (OpenAI Realtime/WebRTC)",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=22.6.0" }
+}
